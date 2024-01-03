@@ -302,9 +302,53 @@
         }
         .parent_section .section {
           max-width: 100px;
-          height: 315px;
+          height: 290px;
 
           margin-left: 10px;
+        }
+      }
+      .parent_presentation {
+        display: flex;
+        justify-content: center;
+        /* align-items: center;
+        align-content: center; */
+
+        width: 100%;
+        height: 460px;
+      }
+
+      .section2_presentation {
+        width: 50%;
+        background-image: url("./img/dalum1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+      }
+      .section1_presentation {
+        width: 50%;
+        margin: 5px;
+      }
+      @media (max-width: 767px) {
+        .parent_presentation {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+          /* align-items: center;
+        align-content: center; */
+
+          width: 100%;
+          height: 800px;
+        }
+        .section2_presentation {
+          width: 100%;
+          height: 350px;
+        }
+        .section1_presentation {
+          width: 100%;
+
+        
         }
       }
     </style>
@@ -511,14 +555,14 @@
                 <div class="row justify-content-center">
                   <div class="col-lg-7 pt-5">
                     <h3 class="display-4 text-white mb-3 animated slideInDown">
-                      L'évangile au service du développement durable
+                      La Grâce Parle Fondation & Ministère
                     </h3>
                     <!-- <a class="custom-button" href="ministere.html">DÉCOUVRIR</a> -->
-                    <!-- <p class="fs-5 text-white-50 mb-5 animated slideInDown">
-                      À travers l'amour du Christ, nous guidons les âmes
-                      perdues, offrant espoir, réconfort et but pour illuminer
-                      leur chemin. jgjg
-                    </p> -->
+
+                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">
+                      Construisons ensemble des générations d'ouvriers de Christ
+                      qui influencent positivement leur environnement
+                    </p>
                   </div>
                 </div>
               </div>
@@ -537,11 +581,12 @@
                     <h3 class="display-4 text-white mb-3 animated slideInDown">
                       Philharmonie La Grâce Parle : La Parole en Mélodie.
                     </h3>
-                    <!-- <p class="fs-5 text-white-50 mb-5 animated slideInDown">
-                      Philharmonie La Grâce Parle : La Parole en Mélodie. Notre
-                      groupe chrétien de musique résonne avec l'amour divin.
+                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">
+                      Notre groupe de musique résonne avec l'amour divin.
                     </p>
-                    <button class="mui-button secondary-button"><a href="philharmonie.html">DECOUVRIR</a></button> -->
+                    <!-- <button class="mui-button secondary-button">
+                      <a href="philharmonie.html">DECOUVRIR</a>
+                    </button> -->
                   </div>
                 </div>
               </div>
@@ -605,7 +650,7 @@
       </a>
       <a href="contact.html" class="section">
         <img src="./img/PASTEUR-A-VOTRE-ECOUTE1.png" alt="" />
-        <h5>PASTEUR A VOTRE ECOUTE</h5>
+        <h5>PROPHÈTE À VOTRE ÉCOUTE</h5>
         <p>Découvrez nos services d’accompagnement spirituel</p>
       </a>
       <a href="ministere.html" class="section">
@@ -614,6 +659,35 @@
         <p>Ne manquez pas nos rendez-vous de la semaine</p>
       </a>
     </div>
+
+    <!-- <div
+    style="text-align: center;"
+    class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+  >
+    Ce que nous faisons
+  </div> -->
+    <h2 style="text-align: center">Ils témoignent tous de la grâce de Dieu</h2>
+    <div class="parent_presentation">
+      <div class="section1_presentation">
+        <h2 style="text-align: center">Prophète Samuel Dalum</h2>
+        <p style="padding: 10px">
+          Fondé par le prophète Samuel Dalum, La Fondation "La Grâce Parle" est
+          une organisation à but non lucratif dont le siège est au Bénin, dédiée
+          à apporter de l'aide, de l'espoir et de l'amour aux différentes
+          communautés. Fondé sur des valeurs chrétiennes profondes, notre
+          engagement est de répondre aux besoins physiques, émotionnels et
+          spirituels des hommes, en suivant l'enseignement de Jésus-Christ sur
+          l'amour et la solidarité.
+        </p>
+        <button class="mui-button secondary">
+          <a style="padding-left: 10px; font-size: 12px" href="about.html"></a>
+            HAND OF HOPE</a
+          >
+        </button>
+      </div>
+      <div class="section2_presentation"></div>
+    </div>
+    <h2 style="text-align: center">Ils témoignent tous de la grâce de Dieu</h2>
     <div class="container">
       <div class="box tall-box">
         <div class="flex-container">
@@ -691,24 +765,6 @@
         </h1>
       </div>
     </div>
-    <!-- <div
-    style="text-align: center;"
-    class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
-  >
-    Ce que nous faisons
-  </div> -->
-
-    <div
-      style="
-        background-image: url(img/brigade/brigade3.jpg);
-        background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
-        width: 100%;
-        height: 300px;
-      "
-    ></div>
-
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
       <h2 style="text-align: center">
