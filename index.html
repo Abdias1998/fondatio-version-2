@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Accueil-La Grâce Parle-Fondation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="La grâce parle,brigarde de prière,femme de grâce,le jeûne des jeunes,le cocktail des jeunes,worship mood,chambre haute,philharmonie la grâce parle,les témoins de la grâce"
+      name="keywords"
+    />
+    <meta
+      content="Guidés par la foi et l'amour, La fonadtion La Grâce Parle apporte de l'espoir et de l'aide aux communautés. Rejoignez notre mission de foi, d'amour et de service pour un monde meilleur."
+      name="description"
+    />
+
+    <!-- Favicon -->
+    <link href="img/logo.jfif" rel="icon" />
+    <!-- Google Web Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/modal.css" rel="stylesheet" />
+    <link href="css/humanitaire.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- Script pour les transactions en ligne -->
+    <script src="https://cdn.fedapay.com/checkout.js?v=1.1.7"></script>
+    <!-- Google tag (gtag.js) -->
+    <!-- Script pour google analytic -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FSM4EQJ2E1"
+    ></script>
+    <style>
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: none;
+        overflow: hidden;
+      }
+
+      /* Animation de clignotement */
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .blinking {
+        animation: blink 1s infinite;
+      }
+      /* end */
+      [data-parallax="scroll"] {
+        background: linear-gradient(to bottom, #000000, #334b4f);
+      }
+
+      /* Reset some default button styles */
+      button {
+        border: none;
+        border-radius: 4px;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #fff;
+      }
+      .custom-button {
+        display: inline-block;
+        width: 236px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid white; /* Bordure blanche de 2px */
+        color: white;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 37px;
+        margin-top: 7%;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s; /* Transition pour le survol */
+      }
+
+      .custom-button:hover {
+        background-color: white; /* Fond blanc au survol */
+        color: black; /* Texte noir au survol */
+      }
+      /* Primary button */
+      .primary {
+        background-color: #b3733f;
+        color: white;
+      }
+
+      /* Secondary button */
+      .secondary {
+        background-color: #d84404;
+        color: white;
+      }
+      .secondary-button {
+        background-color: #ffc400;
+        color: white;
+      }
+      .btn-secondary {
+        color: #fff;
+        background-color: transparent;
+        border-color: #fff;
+        margin-top: 5%;
+      }
+
+      /* Success button */
+      .success {
+        background-color: #ffc300;
+        color: white;
+      }
+
+      /* Danger button */
+      .danger {
+        background-color: #5d5d5d;
+        color: white;
+      }
+
+      .container {
+        width: 100%;
+        max-height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      .box {
+        width: 23%;
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 5px solid white;
+        box-sizing: border-box;
+        position: relative;
+      }
+
+      .icon {
+        font-size: 1.5rem;
+      }
+
+      .flex-container {
+        display: flex; /* Utilisation de flex pour aligner côte à côte */
+        align-items: center; /* Alignement vertical au centre */
+      }
+      .colorTexte {
+        color: white;
+        display: none;
+      }
+      .action-button {
+        margin-left: 10px; /* Espacement entre le span et le button */
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      .title {
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-content: center;
+        height: 100%;
+        font-size: 24px;
+      }
+      .decalage_button {
+        height: 120%;
+      }
+
+      .tall-box {
+        height: 400px;
+        width: 40%;
+        /* background-color: #334B4F; */
+        /* background: linear-gradient(to bottom, #334B4F, transparent); */
+        background-image: url("./img/dalum2.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+      }
+      .important {
+        height: 400px;
+        width: 40%;
+        background-image: url("./img/dalum.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        object-fit: cover;
+      }
+
+      .large-box {
+        height: 400px;
+        width: 60%;
+        background-image: url("./img/carousel-1.jpg");
+        background-size: cover;
+      }
+
+      .small-box {
+        height: 400px;
+        width: 60%;
+        background-image: url("./img/newsletter/sun.jpg");
+        background-size: cover;
+      }
+
+      h1 {
+        margin: 0;
+      }
+      a {
+        color: white;
+      }
+      a:hover {
+        color: white;
+      }
+      /* Ajoutez ces styles à la fin de votre feuille de style CSS */
+
+      @media (max-width: 767px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+        }
+
+        .box {
+          width: 100%; /* Les boîtes occupent toute la largeur */
+          border: none;
+        }
+        .tall-box {
+          height: 300px;
+        }
+        .important {
+          height: 300px;
+        }
+
+        .large-box {
+          height: 300px;
+        }
+
+        .small-box {
+          height: 300px;
+        }
+      }
+      .ma-division {
+        width: auto;
+        padding: 20px;
+        background-color: #f0f0f0;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+      }
+    </style>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FSM4EQJ2E1");
+    </script>
+  </head>
+  <body>
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <iframe
+          id="youtubeVideo"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/bz1RYsXxHmk"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div
+      class="container-fluid fixed-top px-0 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div
+        class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex"
+      >
+        <div class="col-lg-6 px-5 text-start">
+          <small
+            ><i class="fa fa-map-marker-alt me-2"></i>Jéricho, Face santé pour
+            tous</small
+          >
+          <small class="ms-4"
+            ><i class="fa fa-envelope me-2"></i>contact@lagraceparle.org</small
+          >
+        </div>
+        <div class="col-lg-6 px-5 text-end">
+          <small>Suivez-nous sur:</small>
+          <a
+            class="text-white-50 ms-3"
+            href="https://www.facebook.com/Samuel.DALUM"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <!-- <a class="text-white-50 ms-3" href=""><i class="fab fa-twitter"></i></a> -->
+          <a
+            class="text-white-50 ms-3"
+            href="https://www.tiktok.com/@lagraceparle.officiel?_t=8ekVXKowouT&_r=1"
+            target="_blank"
+            ><i aria-colcount="fab"
+              ><img src="img/tik-tok.png" alt="tiktok png" /></i
+          ></a>
+          <a
+            class="text-white-50 ms-3"
+            href="https://instagram.com/la_grace_parle?igshid=NTc4MTIwNjQ2YQ=="
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="text-white-50 ms-3"
+            href="https://www.youtube.com/@lagraceparle8000/videos"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+
+      <nav
+        class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+          <h6 style="font-size: 20px" class="fw-bold text-primary m-0">
+            <img
+              alt="logo"
+              src="./img/logo.jfif"
+              width="35"
+              style="border-radius: 100%"
+            /><span class="text-white"> La</span> Grâce<span class="text-white">
+              Parle</span
+            >
+          </h6>
+        </a>
+        <p
+          style="cursor: pointer"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </p>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link active">Accueil</a>
+            <a href="about.html" class="nav-item nav-link">À propos</a>
+
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Soutien et Engagements</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="newsletter.html" class="dropdown-item">Newsletter</a>
+                <a href="prayer.html" class="dropdown-item"
+                  >Envoyer des requêtes de prière</a
+                >
+                <a href="donate.html" class="dropdown-item"
+                  >Faire un don à la fondation</a
+                >
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Témoignages</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="temoignage.html" class="dropdown-item"
+                  >Découvrez des témoignages encourageants</a
+                >
+                <a href="form_temoignage.html" class="dropdown-item"
+                  >Partagez-nous votre témoignage.</a
+                >
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Nos actions</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="ministere.html" class="dropdown-item"
+                  >Centre La Grâce Parle
+                </a>
+                <a href="philharmonie.html" class="dropdown-item"
+                  >L'Orchestre Philharmonie</a
+                >
+                <a href="humanitaire.html" class="dropdown-item"
+                  >Hand Of Hope</a
+                >
+              </div>
+            </div>
+
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Contactez-nous</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="contact.html" class="dropdown-item"
+                  >Prendre un Rendez-vous</a
+                >
+                <a href="contact.html" class="dropdown-item"
+                  >Nous écrire un e-mail</a
+                >
+
+                <a href="faq.html" class="dropdown-item">Faq</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+      <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="w-100"
+              src="img/carousel-1.jfif"
+              alt="  Éclairant les âmes perdues, Répandant l'amour de Christ"
+            />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7 pt-5">
+                    <h3 class="display-4 text-white mb-3 animated slideInDown">
+                      L'évangile au service du développement durable
+                    </h3>
+                    <!-- <a class="custom-button" href="ministere.html">DÉCOUVRIR</a> -->
+                    <!-- <p class="fs-5 text-white-50 mb-5 animated slideInDown">
+                      À travers l'amour du Christ, nous guidons les âmes
+                      perdues, offrant espoir, réconfort et but pour illuminer
+                      leur chemin. jgjg
+                    </p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
+            <img
+            class="w-100"
+            src="img/all7.jfif"
+            alt=" Philharmonie La Grâce Parle"
+         
+            />
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-lg-7 pt-5">
+                    <h3 class="display-4 text-white mb-3 animated slideInDown">
+                      Philharmonie La Grâce Parle : La Parole en Mélodie.
+                    </h3>
+                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">
+                      Philharmonie La Grâce Parle : La Parole en Mélodie. Notre
+                      groupe chrétien de musique résonne avec l'amour divin.
+                    </p>
+                    <button class="mui-button secondary-button"><a href="philharmonie.html">DECOUVRIR</a></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <!-- <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#header-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button> -->
+      </div>
+    </div>
+    <!-- Carousel End -->
+    <div class="modalPresentation" id="myModal">
+      <div class="modal-contentPresentation">
+        <span class="close" id="close-btn">&times;</span>
+        <img
+          src="img/dalum1.jpg"
+          alt="Homme de Dieu"
+          class="modal-image"
+        />
+        <h2>Prendre rendez-vous</h2>
+        <p>Réservez une rencontre avec l'homme de Dieu en cliquant sur le lien ci-dessous. </p>
+        <button class="mui-button success" style="color: #ccc">
+          <a href="">Demander un Rendez-vous</a>
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box tall-box">
+        <div class="flex-container">
+          <button class="mui-button primary">
+            <a
+              style="padding-left: 10px; font-size: 12px"
+              target="_blank"
+              href="https://www.youtube.com/@lagraceparle8000"
+            >
+              &#9654; VIDÉO</a
+            >
+          </button>
+        </div>
+
+        <h1 class="title">
+          Le triomphe de la foi <br />
+          <p class="btn btn-secondary" id="openModalBtn">VOIR LA VIDÉO</p>
+          <!-- Nouveau bouton -->
+        </h1>
+      </div>
+      <div class="box large-box">
+        <div class="flex-container">
+          <button class="mui-button secondary">
+            <a
+              style="padding-left: 10px; font-size: 12px"
+              href="humanitaire.html"
+              >&#9994; HAND OF HOPE</a
+            >
+          </button>
+        </div>
+        <h1 class="title">
+          Joignez-vous à nous pour façonner un monde meilleur. <br />
+          <a class="btn btn-secondary" href="humanitaire.html"
+            >EN SAVOIR PLUS</a
+          >
+          <!-- Nouveau bouton -->
+        </h1>
+      </div>
+
+      <div class="box small-box">
+        <div class="flex-container">
+          <button class="mui-button success" style="color: #ccc">
+            <span>&#128161;</span
+            ><a
+              style="padding-left: 10px; font-size: 12px"
+              href="newsletter.html"
+              >THE MONTHLY MEDIATION</a
+            >
+          </button>
+        </div>
+
+        <h1 class="title">
+          Arrêtez de « tenir vos comptes » <br />
+          <a class="btn btn-secondary" href="newsletter.html">LIRE LA PENSÉE</a>
+          <!-- Nouveau bouton -->
+        </h1>
+      </div>
+      <div class="box tall-box important">
+        <div class="flex-container">
+          <button style="font-size: 12px" class="mui-button danger">
+            <span>&#128218;</span> E-BOOK
+          </button>
+        </div>
+        <h1 class="title">
+          <a
+            class="btn btn-secondary"
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=+22953037832&text=Nous sommes désireux d'acquérir ce livre pour enrichir notre collection personnelle et partager son contenu.
+        
+      
+        "
+            >EN SAVOIR PLUS</a
+          >
+          <!-- Nouveau bouton -->
+        </h1>
+      </div>
+    </div>
+    <!-- <div
+    style="text-align: center;"
+    class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+  >
+    Ce que nous faisons
+  </div> -->
+    <h2 style="text-align: center">Qui-sommes-nous ?</h2>
+    <div class="">
+      <p style="padding: 15px">
+        Fondé par le prophète Samuel Dalum, La Fondation "La Grâce Parle" est
+        une organisation à but non lucratif dont le siège est au Bénin, dédiée à
+        apporter de l'aide, de l'espoir et de l'amour aux différentes
+        communautés. Fondé sur des valeurs chrétiennes profondes, notre
+        engagement est de répondre aux besoins physiques, émotionnels et
+        spirituels des hommes, en suivant l'enseignement de Jésus-Christ sur
+        l'amour et la solidarité. 
+      </p>
+      <p style="padding: 15px">
+        Nous sommes une équipe passionnée et dévouée qui œuvre inlassablement
+        pour un monde meilleur pour tous. Nous croyons en l'importance de la
+        solidarité, de l'éducation, de la préservation de l'environnement, de la
+        promotion de la culture locale et du respect des droits de l'homme.
+        <a style="color: #FFC300;" href="temoignage.html">En savoir plus</a>
+      </p>
+
+    
+  
+    </div>
+    <h2 style="text-align: center; margin-top: 20px">
+      Expérimenter une nouvelle dimension avec Dieu avec nos programmes de
+      prière.
+    </h2>
+    <br />
+
+    <div
+      style="
+        background-image: url(img/brigade/brigade3.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+      "
+    ></div>
+
+    <p style="padding: 15px">
+      Nos programmes de prière offrent une opportunité précieuse de se connecter
+      avec Dieu, de se recentrer et de trouver la paix intérieure. À travers des
+      moments de louange, de supplication et d'adoration, ces programmes créent
+      un espace pour renforcer sa relation avec Dieu. Les programmes de prière permettent de se ressourcer
+      spirituellement, de chercher des réponses aux questions les plus profondes
+      de la vie, et de trouver un apaisement dans un monde parfois agité. Ils
+      sont une source d'inspiration, d'encouragement et d'élévation pour l'âme,
+      offrant un moment de communion intime avec notreseigneur Jesus.
+   
+        <a style="color: #FFC300;" href="ministere.html">En savoir plus</a>
+   
+    </p>
+    <h2 style="text-align: center">Découvrez notre branche musicale : L'orchestre philharmonie La Grâce Parle</h2>
+    <p style="padding: 15px">
+      L'orchestre philharmonique est l'une des formations musicales les plus
+      prestigieuses et emblématiques de lasous région. Composé de jeunes talentueux
+      jouant une variété d'instruments à cordes, à vent et à percussions, cet
+      ensemble symphonique crée une harmonie enchanteresse.
+   
+      
+    </p>
+    <p>
+      Sous la baguette
+      d'un chef d'orchestre expérimenté, la philharmonie donne vie à des
+      compositions classiques et contemporaines, transportant son public dans un
+      voyage musical captivant. Les mélodies majestueuses et les sonorités
+      époustouflantes de l'orchestre philharmonique sont une célébration de la
+      musique dans toute sa splendeur, incarnant l'élégance, la passion et la
+      virtuosité. C'est un véritable trésor culturel qui continue à inspirer et
+      à émouvoir les auditoires du monde entier.
+      
+      <a style="color: #FFC300;" href="philharmonie.html">En savoir plus
+    </p>
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+      <h2 style="text-align: center">
+        Ils témoignent tous de la grâce de Dieu
+      </h2>
+      <p style="padding: 15px">
+        Explorer les témoignages inspirants de femmes et d'hommes de grâce qui
+        ont placé leur confiance en Dieu, découvrant ainsi comment sa puissance
+        et son amour transforment leurs vies.
+      </p>
+      <div class="container">
+        <div
+          class="text-center mx-auto mb-5 wow fadeInUp"
+          data-wow-delay="0.1s"
+          style="max-width: 500px"
+        ></div>
+        <div
+          class="owl-carousel testimonial-carousel wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="testimonial-item text-center">
+            <img
+              class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+              src="img/user.png"
+              alt="user-testimoni"
+              style="width: 100px; height: 100px"
+            />
+            <div class="testimonial-text rounded text-center p-4">
+              <p>
+                Je rends grâce à Dieu pour avoir guéri ma maladie grave suite à
+                un programme en direct(Brigarde de prière), une véritable
+                intervention divine qui a transformé ma vie.
+              </p>
+              <h5 class="mb-1">Edouard</h5>
+              <span class="fst-italic">Guérison Miraculeuse</span>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <img
+              alt="user-testimoni"
+              class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+              src="img/user.png"
+              style="width: 100px; height: 100px"
+            />
+            <div class="testimonial-text rounded text-center p-4">
+              <p>
+                La restauration de ma famille, autrefois déchirée par les
+                conflits, est un miracle qui me remplit de gratitude envers le
+                Dieu de La grâce parle.
+              </p>
+              <h5 class="mb-1">jean</h5>
+              <span class="fst-italic">Famille Restaurée</span>
+            </div>
+          </div>
+          <div class="testimonial-item text-center">
+            <img
+              class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4"
+              src="img/user-wife.webp"
+              alt="user-testimoni"
+              style="width: 100px; height: 100px"
+            />
+            <div class="testimonial-text rounded text-center p-4">
+              <p>
+                J'étais au bord de la faillite, mais Dieu m'a donné une nouvelle
+                opportunité qui a transformé ma situation financière, je suis
+                reconnaissant au-delà des mots envers notre seigneur
+                Jésus-Christ.
+              </p>
+              <h5 class="mb-1">Yvette</h5>
+              <span class="fst-italic">Nouvelle Opportunité</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>
+        Découvrez d'autres témoignages encourageants dans la section
+        <button class="mui-button success" style="color: #ccc">
+          <a href="temoignage.html">Les témoins de la grâce</a>
+        </button>
+      </p>
+    </div>
+    <!-- Testimonial End -->
+
+    <div class="containers">
+      <div class="boxs box1s">
+        <div class="icons">
+          <span class="icon">&#128161;</span>
+          <button style="background-color: #ffc400" class="mui-button success">
+            <a style="color: #fff" href="newsletter.html"
+              >The Monthly Mediation</a
+            >
+          </button>
+        </div>
+        <h2 style="color: white">
+          Recevoir une méditation tous les premiers du mois
+        </h2>
+        <button
+          style="
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid white;
+            cursor: pointer;
+          "
+        >
+          <a style="color: white" href="newsletter.html#subscribe"
+            >JE MABONNE</a
+          >
+        </button>
+      </div>
+      <div class="boxs box2s">
+        <button
+          style="
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid white;
+            cursor: pointer;
+          "
+        >
+          <a style="color: #fff" href="form_temoignage.html"
+            >PARTAGER MON TÉMOIGNAGE</a
+          >
+        </button>
+
+        <button
+          style="
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: transparent;
+
+            border: 1px solid white;
+            cursor: pointer;
+          "
+        >
+          <a style="color: #fff" href="contact.html">NOUS ÉCRIRE UN EMAIL</a>
+        </button>
+        <button
+          style="
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: transparent;
+
+            color: #fff;
+            border: 1px solid white;
+            cursor: pointer;
+          "
+        >
+          <a style="color: #fff" href="prayer.html"
+            >ENVOYER DES REQUÊTES DE PRIÈRES</a
+          >
+        </button>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-dark text-white-50 footer mt-5 fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <p>
+              <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h6 style="font-size: 20px" class="fw-bold text-primary m-0">
+                  <img
+                    alt="logo"
+                    src="./img/logo.jfif"
+                    width="35"
+                    style="border-radius: 100%"
+                  />
+                  La Grâce<span class="text-white"> Parle</span>
+                </h6>
+              </a>
+            </p>
+            <li>
+              L'emplacement du centre se trouve en face de Santé pour tous à
+              Jéricho
+            </li>
+            <div class="d-flex pt-2">
+              <!-- <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a> -->
+              <a
+                class="btn btn-square me-1"
+                href="https://www.facebook.com/Samuel.DALUM"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                class="btn btn-square me-1"
+                href="https://www.tiktok.com/@lagraceparle.officiel?_t=8ekVXKowouT&_r=1"
+                target="_blank"
+                ><i aria-colcount="fab"
+                  ><img src="img/tik-tok.png" alt="tiktok" /></i
+              ></a>
+              <a
+                class="btn btn-square me-1"
+                href="https://www.instagram.com/la_grace_parle/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                class="btn btn-square me-1"
+                href="https://www.youtube.com/@lagraceparle8000/videos"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <!-- <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a> -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Adresse</h5>
+
+            <i class="fa fa-map-marker-alt me-3"
+              >Jéricho, Face santé pour tous</i
+            >
+            <br />
+            <i class="fa fa-phone-alt me-3">+229 97 96 38 96/50505011</i>
+            <br />
+            <i class="fa fa-envelope me-3">contact@lagraceparle.org</i>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-light mb-4">Liens rapides</h5>
+            <a class="btn btn-link" href="about.html"> À propos</a>
+            <a class="btn btn-link" href="contact.html">Contactez-nous</a>
+            <!-- <a class="btn btn-link" href="service.html">Nos services</a> -->
+            <a class="btn btn-link" href="mentions.html">Termes et condition</a>
+            <a class="btn btn-link" href="faq.html">Faq</a>
+          </div>
+
+          <form class="col-lg-3 col-md-6" id="subscribeForm">
+            <div>
+              <h5 class="text-light mb-4">Newsletter</h5>
+              <li>Recevrez nos dernières actualités et mises à jour.</li>
+              <div class="position-relative mx-auto" style="max-width: 800px">
+                <p id="messageParagraph"></p>
+
+                <a
+                  id="openModalButton"
+                  href="newsletter.html"
+                  class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                >
+                  Je m'abonne
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="container-fluid copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a href="index.html">Fondation La Grâce Parle</a>, tous
+              droits réservés.
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              Designed By <a href="index.html">La Grâce Parle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="live-icon" style="display: none">
+        <a href="https://zeno.fm/radio/la-grace-parle/" target="_blank">
+          <img
+            src="./img/live2.webp"
+            style="
+              z-index: 10000;
+              position: fixed;
+              bottom: 50px;
+              left: 10;
+              border-radius: 100%;
+              cursor: pointer;
+            "
+            alt="WhatsApp"
+            width="50"
+            height="50"
+        /></a>
+      </div>
+
+      <!-- <a href="https://api.whatsapp.com/send?phone=+22953037832&text=`Bonjour, j'ai découvert ce lien sur votre site web et je souhaiterais obtenir de plus amples informations concernant la Fondation La Grâce Parle.` " target="_blank">
+        <img src="./img/whatsapp-icon.png" style="z-index: 10000;  position: fixed;bottom: 30px;left: 10;border-radius: 100%;" alt="WhatsApp" width="50" height="50">
+    </a> -->
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+
+    <script type="text/javascript">
+      FedaPay.init("#pay-btn", { public_key: "YOUR_API_PUBLIC_KEY" });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script type="text/javascript">
+      FedaPay.init(".pay-btn", {
+        public_key: "pk_live_IBOVDokIe2uHDaLJGzOSH-8-",
+      });
+    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ministère Chrétien-La Grâce Parle Fondation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/logo.jfif" rel="icon" />
+
+    <!-- Google Web Fonts -->
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet --> 
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/humanitaire.css" rel="stylesheet" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FSM4EQJ2E1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FSM4EQJ2E1");
+    </script>
+    <style>
+    
+       header {
+        background-color: #f1e3c7;
+        color: white;
+        text-align: center;
+
+      }
+      /* end */
+      /* Styles pour les grands écrans */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.image-container img {
+width: 50%;
+padding: 15px;
+  margin-bottom: 10px;
+  height: 20%;
+}
+
+/* Styles pour les petits écrans */
+@media screen and (max-width: 768px) {
+  .image-container {
+    display: block;
+  }
+
+  .image-container img {
+    width: 100%; /* Occupe toute la largeur de l'écran */
+    margin-bottom: 10px;
+  }
+}
+
+      /* end */
+      /* Votre CSS existant */
+      iframe {
+        width: 100%;
+        height: auto;
+        border: none;
+        overflow: hidden;
+      }
+      .prayer-info-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        flex-wrap: wrap;
+      }
+
+      .prayer-info {
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .prayer-info h2 {
+        color: #333;
+      }
+
+      .prayer-info i {
+        font-size: 48px;
+        margin-bottom: 10px;
+      }
+
+      /* CSS pour les petits écrans */
+      @media (max-width: 620px) {
+        .prayer-info-container {
+          grid-template-columns: 1fr; /* Afficher en colonne */
+          text-align: center;
+        }
+      }
+
+      /* end */
+      .container_car {
+        width: 100vw; /* Largeur de votre carrousel */
+        overflow: hidden;
+        height: auto;
+
+        display: none;
+      }
+
+      .carousel_sema {
+        display: flex;
+        width: 100vw;
+        height: auto;
+        animation: carousel-animation 10s linear infinite; /* 10s de délai entre chaque image */
+      }
+
+      .item {
+        width: 100%;
+        flex-shrink: 0;
+        transition: transform 1s;
+      }
+      img {
+        object-fit: contain;
+      }
+      @media (max-width: 768px) {
+        .container_car {
+          display: block;
+        }
+      }
+      @keyframes carousel-animation {
+        0% {
+          transform: translateX(0);
+        }
+        20% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-100%);
+        }
+        45% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(-200%);
+        }
+        70% {
+          transform: translateX(-200%);
+        }
+        75% {
+          transform: translateX(-300%);
+        }
+        95% {
+          transform: translateX(-300%);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div
+      class="container-fluid fixed-top px-0 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div
+        class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex"
+      >
+        <div class="col-lg-6 px-5 text-start">
+          <small
+            ><i class="fa fa-map-marker-alt me-2"></i>Jéricho, Face santé pour
+            tous</small
+          >
+          <small class="ms-4"
+            ><i class="fa fa-envelope me-2"></i>contact@lagraceparle.org</small
+          >
+        </div>
+        <div class="col-lg-6 px-5 text-end">
+          <small>Suivez-nous sur:</small>
+          <a
+            class="text-white-50 ms-3"
+            href="https://www.facebook.com/Samuel.DALUM"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <!-- <a class="text-white-50 ms-3" href=""><i class="fab fa-twitter"></i></a> -->
+          <a
+            class="text-white-50 ms-3"
+            href="https://www.tiktok.com/@lagraceparle.officiel?_t=8ekVXKowouT&_r=1"
+            target="_blank"
+            ><i aria-colcount="fab"
+              ><img src="img/tik-tok.png" alt="tiktok png" /></i
+          ></a>
+          <a
+            class="text-white-50 ms-3"
+            href="https://instagram.com/la_grace_parle?igshid=NTc4MTIwNjQ2YQ=="
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="text-white-50 ms-3"
+            href="https://www.youtube.com/@lagraceparle8000/videos"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+
+      <nav
+        class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+          <h6 style="font-size: 20px" class="fw-bold text-primary m-0">
+            <img src="./img/logo.jfif" width="35" style="border-radius: 100%" />
+            <span class="text-white"> La</span>
+            Grâce<span class="text-white"> Parle</span>
+          </h6>
+        </a>
+        <p
+          style="cursor: pointer"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </p>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">Accueil</a>
+            <a href="about.html" class="nav-item nav-link">À propos</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Soutien et Engagements</a
+              >
+              <div class="dropdown-menu m-0">
+             
+               
+                <a href="newsletter.html" class="dropdown-item"
+                  >Newsletter</a
+                >
+                <a href="prayer.html" class="dropdown-item"
+                  >Envoyer des requêtes de prière</a
+                >
+                <a href="donate.html" class="dropdown-item"
+                >Faire un don à la fondation</a
+              >
+      
+              </div>
+            </div>
+          
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Témoignages</a
+              >
+              <div class="dropdown-menu m-0">
+                <!-- <a href="service.html" class="dropdown-item"
+                  >Nos différents services</a
+                > -->
+                <a href="temoignage.html" class="dropdown-item"
+                  >Découvrez des témoignages encourageants</a
+                >
+                <a href="form_temoignage.html" class="dropdown-item"
+                  >Partagez-nous votre témoignage.</a
+                >
+
+                <!-- <a href="team.html" class="dropdown-item">Our Team</a> -->
+                <!-- <a href="testimonial.html" class="dropdown-item">Testimonial</a> -->
+                <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle active"
+                data-bs-toggle="dropdown"
+                >Nos actions</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="ministere.html" class="dropdown-item active"
+                  >Centre La Grâce Parle
+                </a>
+                <a href="philharmonie.html" class="dropdown-item"
+                  >L'Orchestre Philharmonie</a
+                >
+                <a href="humanitaire.html" class="dropdown-item"
+                  >Hand Of Hope</a
+                >
+              </div>
+            </div>
+
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Contactez-nous</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="contact.html" class="dropdown-item"
+                  >Prendre un Rendez-vous</a
+                >
+                <a href="contact.html" class="dropdown-item"
+                  >Nous écrire un e-mail</a
+                >
+               
+                <a href="faq.html" class="dropdown-item">Faq</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="d-none d-lg-flex ms-2">
+            <a class="btn btn-outline-primary py-2 px-3" href="donate.html">
+              Faire un don
+              <div
+                class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
+              >
+                <i class="fa fa-arrow-right"></i>
+              </div>
+            </a>
+          </div> -->
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div
+      class="container-fluid page-header-ministere mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container text-center">
+        <h1 class="display-4 text-white animated slideInDown mb-4">
+          Le centre La Grâce Parle
+        </h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="index.html">Accueil</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-white" href="#">Nos Actions</a>
+            </li>
+            <li class="breadcrumb-item text-primary active" aria-current="page">
+              Le centre La Grâce Parle
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- <div class="container_car">
+      <div class="carousel_sema">
+        <div class="item">
+          <img
+            src="./img/emission.png"
+            alt="Image 2"
+            width="100%"
+            height="300px"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./img/femme-de-grace.png"
+            width="100%"
+            height="300px"
+            alt="Image 1"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./img/chambre-haute.png"
+            alt="Image 3"
+            width="100%"
+            height="300px"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./img/coktail.png"
+            alt="Image 4"
+            width="100%"
+            height="300px"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="./img/jeune-jeune.png"
+            alt="Image 5"
+            width="100%"
+            height="300px"
+          />
+        </div>
+      </div>
+    </div> -->
+    <h2 style="text-align: center;">Explorez nos programmes pour en savoir davantage sur notre ministère.</h2>
+    <br>
+    <h4 style="padding:15px;text-transform: uppercase;">Brigade de Prière</h4>
+    <p style="padding:15px">
+      La brigade de Prière est un programme qui se déroule au sein de notre
+      centre, les Mardis, Vendredi, Dimanche et les Lundi en Direct sur la
+      radio Maranata(103.1). C'est un programme ou les personnes de toute
+      communauté religieuse se rassemblent pour élever leur voix à Dieu pour
+      une intervention divine de notre seigneur Jésus que ce soit pour la
+      guérison, le travail, la santé et d'autres bénédictions divines. Nous
+      offrons un espace de prière et d'intercession pour les besoins
+      spirituels et matériels de chacun. Vous pouvez nous joindre pour nos
+      séances de prières visant à solliciter les bénédictions de Dieu dans
+      divers aspects de votre vie.
+    </p>
+    <div class="parent">
+      <div class="child7"></div>
+      <div class="child2">
+      
+        <div class="image-container">
+          <img src="./img/brigade/brigade1.jpg" alt="Image 1" />
+          <img src="./img/brigade/brigade2.jpg" alt="Image 2" />
+          <img src="./img/brigade/brigade3.jpg" alt="Image 3" />
+          <img src="./img/brigade/brigade4.jpg" alt="Image 3" />
+          <!-- Ajoutez autant d'images que nécessaire -->
+        </div>
+        <h6>
+          Suivez la Brigade de Prières sur Maranata touts les lundis a patrtir
+          de 22h30
+        </h6>
+        <a
+          class="btn btn-outline-primary py-2 px-3"
+          href="https://chat.whatsapp.com/HadTnOGnGROAmZpmeYLhCh"
+          target="_blank"
+        >
+        Intégrer notre groupe WhatsApp
+          <div
+            class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
+          >
+            <i class="fa fa-arrow-right"></i>
+          </div>
+        </a>
+        <br />
+       
+        <!-- <a
+          class="btn btn-outline-primary py-2 px-3"
+          href="https://radiovolna.net/fr/423838-maranatha.html"
+          target="_blank"
+        >
+          <img src="./img/Radio.webp" width="80" height="80" alt="" />
+        </a> -->
+
+        <br />
+
+      
+      </div>
+    </div>
+  
+    <h4 style="text-transform: uppercase;padding:15px">LE JEûNE DES JEUNES</h4>
+    <p style="padding:15px">
+      Chaque samedi à partir de 9h, au Centre la Grâce Parle, les jeunes se
+      rassemblent pour une expérience spirituelle profonde et transformante.
+      C'est une opportunité pour les jeunes de chercher la face de Dieu dans
+      leur vie, de se rapprocher de leur foi et de cultiver une connexion
+      spirituelle puissante.
+    </p>
+    <p style="padding:15px">
+      Ce programme hebdomadaire est centré sur le jeûne et la prière. Les
+      jeunes s'unissent dans un acte de renoncement, abandonnant
+      temporairement les distractions de la vie quotidienne pour se
+      concentrer sur la recherche de la présence de Dieu. À travers la
+      prière, la méditation et la réflexion personnelle, ils aspirent à une
+      compréhension plus profonde de leur foi et de leur chemin spirituel.
+    </p>
+    <div class="parent flex-one">
+      <div class="child2">
+     
+        <div class="image-container">
+          <img src="./img/jeune-des-jeunes/jeune1.jpg" alt="Image 1" />
+          <img src="./img/jeune-des-jeunes/jeune2.jpg" alt="Image 2" />
+          <img src="./img/jeune-des-jeunes/jeune3.jpg" alt="Image 3" />
+          <img src="./img/jeune-des-jeunes/jeune4.jpg" alt="Image 4" />
+          <!-- <img src="./img/jeune-des-jeunes/jeune5.jpg" alt="Image 5" />
+          <img src="./img/jeune-des-jeunes/jeune6.jpg" alt="Image 6" /> -->
+          <!-- Ajoutez autant d'images que nécessaire -->
+        </div>
+        <!-- <a
+          class="btn btn-outline-primary py-2 px-3"
+          href="https://www.facebook.com/Samuel.DALUM"
+        >
+          Suivez-nous sur Facebook
+          <div
+            class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
+          >
+            <i class="fa fa-arrow-right"></i>
+          </div>
+        </a> -->
+
+        <br />
+      </div>
+      <div class="child11"></div>
+    </div>
+    <h4 style="padding:15px">LE COCKTAIL DES JEUNES</h4>
+    <p style="padding:15px">
+      Le "Cocktail des Jeunes" est un programme soigneusement planifié,
+      offrant une occasion exceptionnelle aux jeunes de se former et de
+      s'épanouir. Tout au long de cette expérience, les jeunes auront
+      l'opportunité d'explorer diverses facettes de la vie qui sont
+      cruciales pour leur développement personnel, social et spirituel.
+      Parmi les thèmes abordés figurent le mariage, la gestion des affaires,
+      et la manière de maintenir une relation solide avec Dieu, en
+      particulier dans la perspective des jeunes.
+    </p>
+    <p style="padding:15px">
+      Ce programme offre non seulement une éducation précieuse, mais il
+      favorise également l'interaction sociale et l'amusement. Les jeunes
+      sont invités à participer à une variété d'activités engageantes,
+      telles que des jeux stimulants qui
+      permettent de libérer leur créativité et leur énergie. Enfin, chaque
+      planification du "Cocktail des Jeunes" se termine par une festivité
+      mémorable, créant ainsi des moments de camaraderie et de célébration
+      inoubliables.
+    </p>
+    <div class="parent ">
+      
+      <div class="child13"></div>
+      <div class="child2">
+       
+        <!-- <a
+          class="btn btn-outline-primary py-2 px-3"
+          href="https://www.facebook.com/Samuel.DALUM"
+        >
+          Suivez-nous sur Facebook
+          <div
+            class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
+          >
+            <i class="fa fa-arrow-right"></i>
+          </div>
+        </a> -->
+  <div class="image-container">
+      <img src="./img/cocktail/cocktail1.jpg" alt="Image 1" />
+      <img src="./img/cocktail/cocktail2.jpg" alt="Image 2" />
+      <img src="./img/cocktail/cocktail3.jpg" alt="Image 3" />
+      <img src="./img/cocktail/cocktail4.jpg" alt="Image 3" />
+
+    </div>
+        <br />
+      </div>
+    </div>
+
+
+  
+    <!-- <h2 style="text-align: center;">Exprimez votre gratitude et plantez la graine de l'abondance en un simple clic.</2>
+  
+  
+    <div class="child14"></div>
+    <p style="padding: 15px;">Pour envoyer votre action de grâce avec MTN en un clic, cliquer sur le bouton MTN, saisissez le montant suivi de #. Pour MOOV, saisissez le montant suivi, composez *1 suivi de # en cliquant sur le bouton MOOV. </p>
+    <p style="padding: 15px;">  <button class="mui-button secondary-button"><a style="color: #fff;" href="tel:*880*41*100000*">MTN</a></button>
+      <button class="mui-button primary"><a  style="color: #fff;" href="tel:*855*4*1*86260*">MOOV</a></button></p> -->
+
+    <br>
+
+  </div>
+
+  <h2 style="text-align: center;"> Explorez une nouvelle dimension de la louange, dévoilant des horizons insoupçonnés et inspirants.</h2>
+   
+    <h4 style="padding:15px">WORSHIP MOOD</h4>
+    <p style="padding:15px">
+      Chaque dimanche, après un programme de trois jours de jeûne et de
+      prière, nous nous rassemblons dans l'unité et dans la foi pour rendre
+      gloire à Dieu avec nos actions de grâce. Le "Worship Mood" est bien
+      plus qu'un simple programme religieux, c'est une expérience
+      spirituelle qui transcende les frontières de la communion. C'est un
+      moment où les âmes se rejoignent pour célébrer la grandeur de notre
+      Créateur.
+    </p>
+
+    <p style="padding:15px">
+      Lors de chaque édition de notre programme, nous invitons des chantres
+      de l'Eternel à se joindre à nous pour apporter une dimension unique à
+      cette célébration, inspirant et édifiant tous ceux qui l'assistent.
+    </p>
+  <div class="parent">
+    <div class="child12"></div>
+    <div class="child2">
+    
+      <div class="image-container">
+        <img src="./img/worship/worship1.jpg" alt="Image 1" />
+        <img src="./img/worship/worship2.jpg" alt="Image 2" />
+        <img src="./img/worship/worship3.jpg" alt="Image 3" />
+        <img src="./img/worship/worship4.jpg" alt="Image 4" />
+        <!-- <img src="./img/jeune-des-jeunes/jeune5.jpg" alt="Image 5" />
+        <img src="./img/jeune-des-jeunes/jeune6.jpg" alt="Image 6" /> -->
+        <!-- Ajoutez autant d'images que nécessaire -->
+      </div>
+      <a
+      class="btn btn-outline-primary py-2 px-3"
+      href="https://www.facebook.com/worshipmood" target="_blank"
+    >
+   Suivez-nous sur Facebook
+      <div
+        class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
+      >
+        <i class="fa fa-arrow-right"></i>
+      </div>
+    </a>
+    </div>
+  </div>
+
+ 
+    <div class="parent flex-one">
+      <div class="child2">
+        <h4>CHAMBRE HAUTE</h4>
+        <p>
+          Les mardis fériés prennent une signification spéciale grâce à notre
+          programme unique, la "Chambre Haute". C'est un moment où nous nous
+          rassemblons pour une expérience spirituelle profonde et méditative,
+          conçue pour nourrir nos âmes et renforcer notre connexion avec Dieu.
+        </p>
+        <p>
+          La "Chambre Haute" tire son nom de l'endroit où Jésus et ses disciples
+          se sont réunis pour la Cène, un lieu empreint de spiritualité et de
+          communion. De la même manière, notre programme vise à recréer cet
+          esprit de proximité avec Dieu. Chaque mardi férié, nous nous
+          réunissons pour la prière, la méditation, et la réflexion spirituelle,
+          dans un cadre calme et paisible.
+        </p>
+        <a
+          class="btn btn-outline-primary py-2 px-3"
+          href="https://www.facebook.com/Samuel.DALUM/videos/1158018904854175" target="_blank"
+        >
+          Voir la vidéo sur Facebook
+          <div
+            class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
+          >
+            <i class="fa fa-arrow-right"></i>
+          </div>
+        </a>
+    
+
+        <br />
+
+    
+      </div>
+      <div class="child8"></div>
+    </div>
+
+    <h4 style="text-transform: uppercase;padding:15px">FEMME DE Grâce</h4>
+    <p style="padding:15px">
+      "Femme de Grâce" est un rassemblement spécial dédié à l'émancipation,
+      à l'épanouissement et à l'élévation des femmes. Chaque réunion est une
+      opportunité unique pour les femmes de tous horizons de se réunir,
+      d'apprendre, de grandir et de partager leur foi en un avenir meilleur.
+    </p>
+    <p style="padding:15px">
+      Au cœur de "Femme de Grâce" se trouvent des enseignements inspirants
+      qui touchent divers aspects de la vie des femmes. Des thèmes tels que
+      la gestion du foyer, le rôle de modèle, et l'impact positif sur leur
+      environnement sont abordés. Cette communion de prière renforce les
+      liens familiaux, apporte la sérénité aux foyers et favorise une
+      transformation positive dans la vie de chaque participante.
+    </p>
+    <div class="parent">
+      <div class="child10"></div>
+      <div class="child2">
+       
+        <div class="image-container">
+          <img src="./img/femme-de-grâce/femme1.png" alt="Image 1" />
+          <img src="./img/femme-de-grâce/femme2.png" alt="Image 2" />
+          <img src="./img/femme-de-grâce/femme3.png" alt="Image 3" />
+          <img src="./img/femme-de-grâce/femme4.png" alt="Image 4" />
+          <!-- <img src="./img/jeune-des-jeunes/jeune5.jpg" alt="Image 5" />
+          <img src="./img/jeune-des-jeunes/jeune6.jpg" alt="Image 6" /> -->
+          <!-- Ajoutez autant d'images que nécessaire -->
+        </div>
+        <!-- <a
+          class="btn btn-outline-primary py-2 px-3"
+          href="https://www.facebook.com/Samuel.DALUM"
+        >
+          Suivez-nous sur Facebook
+          <div
+            class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
+          >
+            <i class="fa fa-arrow-right"></i>
+          </div>
+        </a> -->
+      </div>
+    </div>
+  <!-- <div class="image-container">
+      <img src="./img/all7.jfif" alt="Image 1" />
+      <img src="./img/all7.jfif" alt="Image 2" />
+      <img src="./img/all7.jfif" alt="Image 3" />
+      <img src="./img/all7.jfif" alt="Image 3" />
+ 
+    </div> -->
+
+ 
+ 
+
+    <div class="containers">
+      <div class="boxs box1s">
+        <div class="icons">
+  
+          <span class="icon">&#128161;</span>
+          <button style="background-color: #ffc400;" class="mui-button success"><a style="color: #fff;"  href="newsletter.html">The Monthly Mediation</a></button>
+        </div>
+        <h2 style="color: white;">Recevoir une méditation tous les premiers du mois</h2>
+        <button style=" margin: 5px;  padding: 10px 20px;
+        background-color: transparent; 
+        color: #fff;
+        border: 1px solid white;;
+        cursor: pointer;"><a style="color: white;" href="newsletter.html#subscribe">JE MABONNE</a></button>
+      </div>
+      <div class="boxs box2s">
+  
+        <button style=" margin: 5px;  padding: 10px 20px;
+        background-color: transparent; 
+        color: #fff;
+        border: 1px solid white;;
+        cursor: pointer;"><a style="color: #fff;"  href="form_temoignage.html">PARTAGER MON TÉMOIGNAGE</a></button>
+        
+        <button style="   padding: 10px 20px;margin: 5px;
+        background-color: transparent; 
+       
+        border: 1px solid white;
+        cursor: pointer;"><a  style="color: #fff;" href="contact.html">NOUS ÉCRIRE UN EMAIL</a></button>    <button style=" margin: 5px;  padding: 10px 20px;
+      background-color: transparent; 
+  
+      color: #fff;
+      border: 1px solid white;
+      cursor: pointer;"><a  style="color: #fff;"  href="prayer.html">ENVOYER DES REQUÊTES DE PRIÈRES</a></button>   
+     
+      </div>
+    </div>
+   <!-- Footer Start -->
+   <div
+   class="container-fluid bg-dark text-white-50 footer mt-5 fadeIn"
+   data-wow-delay="0.1s"
+ >
+   <div class="container py-5">
+     <div class="row g-5">
+       <div class="col-lg-3 col-md-6">
+
+   <p>  <a  href="index.html" class="navbar-brand ms-4 ms-lg-0">
+     <h6 style="font-size: 20px;" class="fw-bold text-primary m-0">
+       <img alt="logo" src="./img/logo.jfif" width="35" style="border-radius: 100%" />
+       La Grâce<span class="text-white"> Parle</span>
+     </h6>
+   </a></p>
+         <li>
+           L'emplacement du centre se trouve en face de Santé pour tous à
+           Jéricho
+         </li>
+         <div class="d-flex pt-2">
+           <!-- <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a> -->
+           <a
+             class="btn btn-square me-1"
+             href="https://www.facebook.com/Samuel.DALUM"
+             target="_blank"
+             ><i class="fab fa-facebook-f"></i
+           ></a>
+           <a
+             class="btn btn-square me-1"
+             href="https://www.tiktok.com/@lagraceparle.officiel?_t=8ekVXKowouT&_r=1"
+             target="_blank"
+             ><i aria-colcount="fab"
+               ><img src="img/tik-tok.png" alt="tiktok" /></i
+           ></a>
+           <a
+             class="btn btn-square me-1"
+             href="https://www.instagram.com/la_grace_parle/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
+             target="_blank"
+             ><i class="fab fa-instagram"></i
+           ></a>
+           <a
+             class="btn btn-square me-1"
+             href="https://www.youtube.com/@lagraceparle8000/videos"
+             target="_blank"
+             ><i class="fab fa-youtube"></i
+           ></a>
+           <!-- <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a> -->
+         </div>
+       </div>
+       <div class="col-lg-3 col-md-6">
+         <h5 class="text-light mb-4">Adresse</h5>
+        
+           <i class="fa fa-map-marker-alt me-3">Jéricho, Face santé pour
+             tous</i>
+       <br>
+         <i class="fa fa-phone-alt me-3">+229 97 96 38 96/50505011</i>
+         <br>
+         <i class="fa fa-envelope me-3">contact@lagraceparle.org</i>
+       </div>
+       <div class="col-lg-3 col-md-6">
+         <h5 class="text-light mb-4">Liens rapides</h5>
+         <a class="btn btn-link" href="about.html"> À propos</a>
+         <a class="btn btn-link" href="contact.html">Contactez-nous</a>
+         <!-- <a class="btn btn-link" href="service.html">Nos services</a> -->
+         <a class="btn btn-link" href="mentions.html">Termes et condition</a>
+         <a class="btn btn-link" href="faq.html">Faq</a>
+       </div>
+
+       <form class="col-lg-3 col-md-6" id="subscribeForm">
+         <div>
+           <h5 class="text-light mb-4">Newsletter</h5>
+           <li>Recevrez nos dernières actualités et mises à jour.</li>
+           <div class="position-relative mx-auto" style="max-width: 800px">
+             <p id="messageParagraph"></p>
+        
+             <a
+               id="openModalButton"
+               href="newsletter.html"
+               class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+             >
+               Je m'abonne
+             </a>
+           </div>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="container-fluid copyright">
+     <div class="container">
+       <div class="row">
+         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+           &copy; <a href="index.html">Fondation La Grâce Parle</a>, tous
+           droits réservés.
+         </div>
+         <div class="col-md-6 text-center text-md-end">
+      
+           Designed By <a href="index.html">La Grâce Parle</a>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div id="live-icon" style="display: none;">      <a href="https://zeno.fm/radio/la-grace-parle/" target="_blank">  <img src="./img/live2.webp" style="z-index: 10000;  position: fixed;bottom: 10px;left: 10;border-radius: 100%;cursor: pointer;" alt="WhatsApp" width="50" height="50"></a>
+   </div>
+ 
+
+
+   
+   <!-- <a href="https://api.whatsapp.com/send?phone=+22953037832&text=`Bonjour, j'ai découvert ce lien sur votre site web et je souhaiterais obtenir de plus amples informations concernant la Fondation La Grâce Parle.` " target="_blank">
+     <img src="./img/whatsapp-icon.png" style="z-index: 10000;  position: fixed;bottom: 30px;left: 10;border-radius: 100%;" alt="WhatsApp" width="50" height="50">
+ </a> -->
+ </div>
+ <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

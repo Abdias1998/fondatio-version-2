@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Philharmonie - La Grâce Parle-Fondation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/logo.jfif" rel="icon" />
+
+    <!-- Google Web Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/humanitaire.css" rel="stylesheet" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FSM4EQJ2E1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FSM4EQJ2E1");
+    </script>
+    <style>
+      /* body {
+ 
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+} */
+
+/* end */
+      .container_video {
+       
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        /* height: auto; */
+        background-color: #f0f0f0; /* Couleur d'arrière-plan */
+      }
+
+      .video-container {
+        
+        width: 100vw; /* Largeur maximale de la vidéo */
+      }
+
+      video {
+        width: 95%;
+        height: 600px;
+        display: block;
+      }
+
+      /* end */
+      /* Styles pour les grands écrans */
+      .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+      }
+
+      .image-container img {
+        width: 50%;
+        padding: 15px;
+        margin-bottom: 10px;
+        height: 20%;
+      }
+
+      /* Styles pour les petits écrans */
+      @media screen and (max-width: 768px) {
+        .image-container {
+          display: block;
+        }
+
+        .image-container img {
+          width: 100%; /* Occupe toute la largeur de l'écran */
+          margin-bottom: 10px;
+        }
+        .container_video {
+       
+   
+       display: block;
+  
+     }
+
+        video {
+        width: 95%;
+        height: 300px;
+        display: block;
+      }
+      .button_video{
+        display: none;
+      }
+      #videoModal{
+        display: none;
+      }
+      }
+      /* end */
+      .message-box {
+        /* border: 2px solid #333; */
+        padding: 20px;
+        background: linear-gradient(135deg, #fff3d1, #ffdda1);
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: auto;
+      }
+
+      .message-title {
+        margin: 0;
+        font-size: 1.5rem;
+        color: #333;
+      }
+
+      .message-author {
+        margin-top: 5px;
+        font-size: 1rem;
+        color: #666;
+      }
+
+      .message-content {
+        margin-top: 10px;
+        font-size: 1rem;
+        color: #444;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      label,
+      select,
+      input,
+      textarea {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      select {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: white;
+      }
+      button {
+        padding: 10px 15px;
+        background-color: #ffc400;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .video-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px; /* Ajustez la hauteur comme nécessaire */
+      }
+
+      /* Style pour l'iframe vidéo */
+      iframe {
+        width: 80%; /* Ajustez la largeur comme nécessaire */
+        height: 350px; /* Ajustez la hauteur comme nécessaire */
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      header {
+        background-color: #f1e3c7;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      .headerTwo {
+        background-color: rgb(255, 169, 0);
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <!-- Le modal -->
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <video id="videoElement" controls>
+          <source src="./video/video-philharmonie.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+      </div>
+    </div>
+    <!-- Le modal -->
+    <div id="videoModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModalBtn">&times;</span>
+        <video id="videoElement" controls>
+          <source src="./video/video-philharmonie.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+      </div>
+    </div>
+
+   
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <div
+      class="container-fluid fixed-top px-0 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div
+        class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex"
+      >
+        <div class="col-lg-6 px-5 text-start">
+          <small
+            ><i class="fa fa-map-marker-alt me-2"></i>Jéricho, Face santé pour
+            tous</small
+          >
+          <small class="ms-4"
+            ><i class="fa fa-envelope me-2"></i>contact@lagraceparle.org</small
+          >
+        </div>
+        <div class="col-lg-6 px-5 text-end">
+          <small>Suivez-nous sur:</small>
+          <a
+            class="text-white-50 ms-3"
+            href="https://www.facebook.com/Samuel.DALUM"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <!-- <a class="text-white-50 ms-3" href=""><i class="fab fa-twitter"></i></a> -->
+          <a
+            class="text-white-50 ms-3"
+            href="https://www.tiktok.com/@lagraceparle.officiel?_t=8ekVXKowouT&_r=1"
+            target="_blank"
+            ><i aria-colcount="fab"
+              ><img src="img/tik-tok.png" alt="tiktok png" /></i
+          ></a>
+          <a
+            class="text-white-50 ms-3"
+            href="https://instagram.com/la_grace_parle?igshid=NTc4MTIwNjQ2YQ=="
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="text-white-50 ms-3"
+            href="https://www.youtube.com/@lagraceparle8000/videos"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+        </div>
+      </div>
+
+      <nav
+        class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn"
+        data-wow-delay="0.1s"
+      >
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+          <h6 style="font-size: 20px" class="fw-bold text-primary m-0">
+            <img src="./img/logo.jfif" width="35" style="border-radius: 100%" />
+            <span class="text-white"> La</span>
+            Grâce<span class="text-white"> Parle</span>
+          </h6>
+        </a>
+        <p
+          style="cursor: pointer"
+          class="navbar-toggler me-4"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </p>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="index.html" class="nav-item nav-link">Accueil</a>
+            <a href="about.html" class="nav-item nav-link">À propos</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Soutien et Engagements</a
+              >
+              <div class="dropdown-menu m-0">
+             
+               
+                <a href="newsletter.html" class="dropdown-item"
+                  >Newsletter</a
+                >
+                <a href="prayer.html" class="dropdown-item"
+                  >Envoyer des requêtes de prière</a
+                >
+                <a href="donate.html" class="dropdown-item"
+                >Faire un don à la fondation</a
+              >
+      
+              </div>
+            </div>
+         
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Témoignages</a
+              >
+              <div class="dropdown-menu m-0">
+                <!-- <a href="service.html" class="dropdown-item"
+                 >Nos différents services</a
+               > -->
+                <a href="temoignage.html" class="dropdown-item"
+                  >Découvrez des témoignages encourageants</a
+                >
+                <a href="form_temoignage.html" class="dropdown-item"
+                  >Partagez-nous votre témoignage.</a
+                >
+
+                <!-- <a href="team.html" class="dropdown-item">Our Team</a> -->
+                <!-- <a href="testimonial.html" class="dropdown-item">Testimonial</a> -->
+                <!-- <a href="404.html" class="dropdown-item">404 Page</a> -->
+              </div>
+            </div>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle active"
+                data-bs-toggle="dropdown"
+                >Nos actions</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="ministere.html" class="dropdown-item"
+                  >Centre La Grâce Parle
+                </a>
+                <a href="philharmonie.html" class="dropdown-item active"
+                  >L'Orchestre Philharmonie</a
+                >
+                <a href="humanitaire.html" class="dropdown-item"
+                  >Hand Of Hope</a
+                >
+              </div>
+            </div>
+
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Contactez-nous</a
+              >
+              <div class="dropdown-menu m-0">
+                <a href="contact.html" class="dropdown-item"
+                  >Nous écrire un e-mail</a
+                >
+               
+                <a href="faq.html" class="dropdown-item">Faq</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="d-none d-lg-flex ms-2">
+           <a class="btn btn-outline-primary py-2 px-3" href="donate.html">
+             Faire un don
+             <div
+               class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2"
+             >
+               <i class="fa fa-arrow-right"></i>
+             </div>
+           </a>
+         </div> -->
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Page Header Start -->
+    <div
+      class="container-fluid page-header-fanfare mb-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container text-center">
+        <h1 class="display-4 text-white animated slideInDown mb-4">
+          L'orchestre Philharmonie
+        </h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+          <ol class="breadcrumb justify-content-center mb-0">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="index.html">Accueil</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-white" href="#">Nos Actions</a>
+            </li>
+            <li class="breadcrumb-item text-primary active" aria-current="page">
+              Philharmonie La Grâce parle
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!-- Page Header End -->
+
+    <div
+      class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3"
+    >
+      À propos de nous
+    </div>
+    <div class="parent">
+      <div class="child9"></div>
+      <div class="child2">
+        <h2>Philharmonie La Grâce Parle</h2>
+        <p>
+          Notre branche de musique Philharmonie La Grâce Parle offre une variété
+          de services pour répondre aux besoins de nos communautés. Nous
+          organisons des concerts en direct pour partager notre musique et notre
+          message de foi. Nous proposons également des ateliers de musique pour
+          aider les gens à développer leurs compétences et leur passion pour la
+          musique. Enfin, nous sommes fiers de collaborer avec d'autres artistes
+          pour créer des projets musicaux uniques et inspirants. Chez nous, la
+          musique est plus qu'un simple divertissement, c'est une expérience de
+          foi et de communauté.
+        </p>
+        <div class="image-container">
+          <img src="./img/phil9.jpeg" alt="Image 1" />
+          <img src="./img/phil2.jpg" alt="Image 2" />
+          <img src="./img/phil3.jpg" alt="Image 3" />
+          <img src="./img/all7.jfif" alt="Image 4" />
+          <!-- <img src="./img/jeune-des-jeunes/jeune5.jpg" alt="Image 5" />
+          <img src="./img/jeune-des-jeunes/jeune6.jpg" alt="Image 6" /> -->
+          <!-- Ajoutez autant d'images que nécessaire -->
+        </div>
+        <a class="btn btn-outline-primary py-2 px-3" href="">
+          Visiter le site web
+          <div
+            class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2"
+          >
+            <i class="fa fa-arrow-right"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+    <header>
+      <h1>Apprenez-en sur nos formations en musique.</h1>
+    </header>
+    <p style="padding: 15px">
+      Nous sommes ravis de vous annoncer qu'une nouvelle vague de formations
+      d'apprentissage, couvrant une vaste gamme d'instruments de musique, est
+      sur le point de voir le jour ! Cette opportunité exceptionnelle vous
+      permettra de plonger dans le monde enchanteur de la musique et d'acquérir
+      des compétences musicales inestimables.
+    </p>
+    <p style="padding: 15px">
+      Que vous aspiriez à jouer la trompette, de la douce mélodie du violon, du
+      rythme percutant de la batterie, ou de tout autre instrument de votre
+      choix, cette nouvelle série de formations a été conçue pour répondre à
+      tous les niveaux et à tous les désirs musicaux.
+    </p>
+    <p style="padding: 15px">
+      Nous vous invitons chaleureusement à consulter régulièrement notre site
+      Web, où les détails complets de cette seconde vague de formations seront
+      bientôt dévoilés. Assurez-vous de ne pas manquer cette occasion unique
+      d'enrichir votre vie avec la musique. Rejoignez notre communauté de la
+      Philharmonie pour rester informé(e) et faire partie d'une famille de
+      mélomanes passionnés en cliquant sur ce lien WhatsApp
+    </p>
+    <p style="margin: auto; text-align: center">
+      <button class="mui-button">
+        <a
+          style="color: #fff"
+          target="_blank"
+          href=" https://chat.whatsapp.com/JKB34YkKLUpDbWSyo0Lm7D"
+          >Rejoignez la communauté Philharmonie</a
+        >
+      </button>
+    </p>
+    <br />
+    <header>
+      <h1>Découvrez quelques-unes de nos prestations en vidéo.</h1>
+    </header>
+    <p style="padding: 15px">Vous pouvez découvrir une vidéo de jazz exceptionnelle, produite au prestigieux Centre La Grâce Parle. Cette vidéo vous offre une expérience musicale envoûtante, où la virtuosité des musiciens se mêle à l'ambiance unique du Centre pour créer une performance inoubliable. Plongez dans l'univers envoûtant du jazz et laissez-vous emporter par la magie de cette vidéo captivante, enregistrée au cœur de ce lieu emblématique.</p>
+      <p class="button_video"  style="padding: 15px;text-align: center;">  <button  id="openTwo" class="mui-button secondary-button">VOIR LA VIDEO</button>
+  </p>
+   
+    <div class="container_video">
+      <div class="video-container">
+        <video style="object-fit: cover;"  controls>
+          <source  src="./video/video-philharmonie-jazz.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+      </div>
+    </div>
+  
+   
+    <br />
+    <!-- <p style="padding: 15px">Cette vidéo offre un aperçu authentique du processus de création musicale au sein de notre philharmonie. Vous pourrez voir nos musiciens talentueux en plein travail, collaborant sous la direction du chef d'orchestre pour peaufiner chaque note, chaque crescendo, et chaque nuance musicale. C'est une opportunité unique de découvrir les coulisses de notre préparation avant nos performances publiques et d'apprécier le dévouement et la passion que nous investissons dans chaque morceau que nous jouons.</p>
+     -->
+    <!-- <p style="padding: 15px;text-align: center;" class="button_video">  <button  id="openTwo" class="mui-button secondary-button">VOIR LA VIDEO</button>
+  </p>
+    <p style="padding: 15px;"></p>
+    <div class="container_video">
+      <div class="video-container">
+        <video style="object-fit: cover;"  controls>
+          <source  src="./video/video-philharmonie.mp4" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+      </div>
+    </div> -->
+  
+   
+    <br />
+    
+    
+ 
+      <header>
+        <h1> Explorez visuellement quelques-uns des instruments joués par
+          l'orchestre</h1>
+      </header>
+    </header> 
+
+    <div class="prayer-info-container">
+      <div class="prayer-info">
+        <i class=""
+          ><img src="./img/violon.jpg" width="80" height="80" alt=""
+        /></i>
+        <h4>Violon</h4>
+        <p>
+          Le violon est un instrument de musique à cordes frottées. Il se
+          compose d'un corps en forme de sablier, d'un manche avec des touches
+          et de quatre cordes en boyau ou en métal. Pour produire des sons, le
+          violoniste utilise un archet, généralement en crin de cheval, qu'il
+          fait glisser sur les cordes tout en exerçant une pression et une
+          vitesse appropriées.
+        </p>
+        <button class="mui-button secondary">
+          <a
+            href="https://api.whatsapp.com/send?phone=+22953037832&text=Nous sommes désireux d'acheter cet instrument(Violon).
+          
+          
+          "
+            target="_blank"
+            target="_blank"
+            style="color: white"
+            >commander</a
+          >
+        </button>
+        <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
+      </div>
+      <div class="prayer-info">
+        <i class=""
+          ><img src="./img/Clarinet_3D.webp" width="80" height="80" alt=""
+        /></i>
+        <h4>La clarinette</h4>
+        <p>
+          La clarinette est un instrument de musique à vent en bois. Elle se
+          compose d'un corps en bois, souvent en ébène ou en grenadille, avec un
+          bec muni d'une anche simple. Pour produire des sons, le clarinettiste
+          souffle de l'air dans le bec et utilise les doigts pour couvrir et
+          découvrir les trous le long du corps de l'instrument. Chaque trou
+          représente une note différente.
+        </p>
+        <button class="mui-button secondary">
+          <a
+            href="https://api.whatsapp.com/send?phone=+22953037832&text=Nous sommes désireux d'acheter cet instrument(Clarinette).
+          "
+            target="_blank"
+            style="color: white"
+            >commander</a
+          >
+        </button>
+
+        <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
+      </div>
+      <div class="prayer-info">
+        <i class=""
+          ><img src="./img/drum.webp" width="80" height="80" alt=""
+        /></i>
+        <h4>Le Tambour</h4>
+        <p>
+          Le tambour est un instrument de percussion essentiel dans la musique
+          du monde entier. Il se compose généralement d'une peau tendue sur un
+          cadre, que l'on frappe avec les mains, les doigts ou des baguettes
+          pour produire des sons rythmiques. Les tambours peuvent varier
+          considérablement en taille, en forme et en sonorité, en fonction de
+          leur type et de leur origine culturelle.
+        </p>
+        <button class="mui-button secondary">
+          <a
+            href="https://api.whatsapp.com/send?phone=+22953037832&text=Nous sommes désireux d'acheter cet instrument(Tambour).
+          "
+            target="_blank"
+            style="color: white"
+            >commander</a
+          >
+        </button>
+
+        <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
+      </div>
+      <div class="prayer-info">
+        <i class=""
+          ><img src="./img/trumpet.png" width="80" height="80" alt=""
+        /></i>
+        <h4>Trompette</h4>
+        <p>
+          La trompette est un instrument de musique à vent de la famille des
+          cuivres. Elle est caractérisée par sa forme conique et son embouchure
+          en forme de petite coupe. La trompette produit des sons en vibrant les
+          lèvres de l'embouchure tout en utilisant des pistons pour changer la
+          longueur du tube, ce qui permet de produire différentes notes.
+        </p>
+        <button class="mui-button secondary">
+          <a
+            href="https://api.whatsapp.com/send?phone=+22953037832&text=Nous sommes désireux d'acheter cet instrument(Trumpette).
+          "
+            target="_blank"
+            style="color: white"
+            >commander</a
+          >
+        </button>
+
+        <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
+      </div>
+      <div class="prayer-info">
+        <i class=""
+          ><img src="./img/flute.jpg" width="80" height="80" alt=""
+        /></i>
+        <h4>Flûte Traversière</h4>
+        <p>
+          La flûte traversière est un instrument de musique à vent en bois. Elle
+          se compose d'un tube long et mince percé de plusieurs trous. Pour
+          produire des sons, le musicien souffle de l'air dans l'embouchure de
+          la flûte traversière et couvre et découvre les trous avec les doigts
+          pour changer la hauteur des notes.
+        </p>
+        <button class="mui-button secondary">
+          <a
+            href="https://api.whatsapp.com/send?phone=+22953037832&text=Nous sommes désireux d'acheter cet instrument(Flûte-traversière).
+          "
+            style="color: white"
+            target="_blank"
+            >commander</a
+          >
+        </button>
+
+        <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
+      </div>
+      <div class="prayer-info">
+        <i class=""
+          ><img src="./img/xylophone.png" width="80" height="80" alt=""
+        /></i>
+        <h4>Xylophone</h4>
+        <p>
+          Le xylophone est un instrument de percussion composé de lames de bois
+          (ou parfois de métal) de différentes longueurs, suspendues au-dessus
+          d'une série de tubes résonateurs. Pour produire des sons, le musicien
+          frappe les lames avec des maillets spéciaux en bois ou en plastique.
+        </p>
+        <button class="mui-button secondary">
+          <a
+            href="https://api.whatsapp.com/send?phone=+22953037832&text=Nous sommes désireux d'acheter cet instrument(Xylophone).
+          "
+            target="_blank"
+            style="color: white"
+            >commander</a
+          >
+        </button>
+
+        <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
+      </div>
+      <div class="prayer-info">
+        <i class=""
+          ><img src="./img/Saxophone.webp" width="80" height="80" alt=""
+        /></i>
+        <h4>Saxophone</h4>
+        <p>
+          Le saxophone est un instrument de musique à vent en laiton inventé par
+          Adolphe Sax au 19e siècle. Il se caractérise par son corps courbé en
+          forme de S et son bec équipé d'une anche simple. Le saxophoniste
+          produit des sons en soufflant de l'air dans le bec, ce qui fait vibrer
+          l'anche, créant ainsi le son.
+        </p>
+        <button class="mui-button secondary">
+          <a
+            href="https://api.whatsapp.com/send?phone=+22953037832&text=Nous sommes désireux d'acheter cet instrument(Saxophone). 
+          "
+            target="_blank"
+            style="color: white"
+            >commander</a
+          >
+        </button>
+
+        <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
+      </div>
+
+      <div class="prayer-info">
+        <i class=""
+          ><img src="./img/trombone.png" width="80" height="80" alt=""
+        /></i>
+        <h4>Trombone</h4>
+        <p>
+          Le trombone est un instrument de musique de la famille des cuivres. Il
+          se compose d'un long tuyau métallique en forme de courbe avec une
+          coulisse mobile. Pour produire des sons, le tromboniste souffle de
+          l'air dans l'embouchure et fait varier la longueur du tuyau coulissant
+          pour changer la hauteur des notes.
+        </p>
+        <button class="mui-button secondary">
+          <a
+            href="https://api.whatsapp.com/send?phone=+22953037832&text=Nous sommes désireux d'acheter cet instrument(Trombone).
+          "
+            target="_blank"
+            style="color: white"
+            >commander</a
+          >
+        </button>
+
+        <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
+      </div>
+      <div class="prayer-info">
+        <i class=""
+          ><img src="./img/cornet.webp" width="80" height="80" alt=""
+        /></i>
+        <h4>Le cornet</h4>
+        <p>
+          Le cornet est un instrument de musique de la famille des cuivres. Il
+          ressemble à une petite trompette, mais il a une forme conique plus
+          prononcée. Comme la trompette, le cornet est doté d'un embouchure en
+          forme de petite coupe, et le musicien produit des sons en soufflant de
+          l'air dans l'embouchure et en utilisant les valves pour changer la
+          longueur du tube.
+        </p>
+        <button class="mui-button secondary">
+          <a
+            href="https://api.whatsapp.com/send?phone=+22953037832&text=Nous sommes désireux d'acheter cet instrument(Cornet).
+          "
+            target="_blank"
+            style="color: white"
+            >commander</a
+          >
+        </button>
+
+        <!-- <p><strong>Heure :</strong> 12h30 - 15h00</p> -->
+      </div>
+    </div>
+    <!-- <header>
+      <h1>Découvrez en images les différentes sorties de la philharmonie.</h1>
+    </header> -->
+
+    <!-- <div class="video-grid">
+      <div class="video">
+        <video controls>
+          <source src="./img/vid.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge la lecture de cette vidéo.
+        </video>
+      </div>
+      <div class="video">
+        <video controls>
+          <source src="./img/vid.mp4" type="video/mp4" />
+          Votre navigateur ne prend pas en charge la lecture de cette vidéo.
+        </video>
+      </div>
+  
+    </div> -->
+    <!-- <div class="image-grid">
+      <div class="image">
+        <img src="./img/phil9.jpeg" alt="Image 9" />
+      </div>
+      <div class="image">
+        <img src="./img/phil1.jpg" alt="Image 1" />
+      </div>
+      <div class="image">
+        <img src="./img/phil2.jpg" alt="Image 2" />
+      </div>
+      <div class="image">
+        <img src="./img/phil3.jpg" alt="Image 3" />
+      </div>
+      <div class="image">
+        <img src="./img/all7.jfif" alt="Image 4" />
+      </div>
+      <div class="image">
+        <img src="./img/phil5.jpg" alt="Image 5" />
+      </div>
+      <div class="image">
+        <img src="./img/phil6.jpg" alt="Image 6" />
+      </div>
+      <div class="image">
+        <img src="./img/phil7.jpg" alt="Image 7" />
+      </div>
+      <div class="image">
+        <img src="./img/phil8.jpg" alt="Image 8" />
+      </div>
+
+      <div class="image">
+        <img src="./img/phil2.jpg" alt="Image 10" />
+      </div>
+    </div> -->
+
+    <!-- <header>
+      <h1>
+        Rejoignez à présent notre philharmonie et continuez l'aventure avec
+        nous.
+      </h1>
+    </header>
+    <p style="padding: 15px">
+      Rejoignez notre prestigieuse philharmonie en remplissant simplement notre
+      formulaire d'adhésion ! L'expérience musicale de toute une vie vous attend
+      au sein de notre orchestre renommé.
+    </p>
+    <p style="padding: 15px">
+      Pour devenir membre de notre philharmonie, il vous suffit de remplir le
+      formulaire d'adhésion en ligne. Vous nous fournirez quelques informations
+      de base, telles que vos coordonnées, votre expérience musicale, et
+      l'instrument que vous jouez. Une fois votre adhésion approuvée, vous serez
+      invité(e) à rejoindre nos répétitions passionnantes et à contribuer à
+      l'art musical sous la direction de chefs d'orchestre talentueux.
+    </p>
+    <form id="subscribeForm">
+      <label for="sexe">Sexe</label>
+      <select id="sexe" name="sexe">
+        <option value="" disabled selected>Précisez</option>
+        <option value="Masculin">Masculin</option>
+        <option value="Féminin">Féminin</option>
+      </select>
+      <label for="names">Nom complet* :</label>
+      <input type="text" id="names" name="names" required />
+
+      <label for="email">Email*</label>
+      <input type="email" id="emails" name="email" required />
+
+      <label for="pays">Sélectionnez l'instrument que vous jouez :</label>
+      <select id="pays" name="pays">
+        <option value="Accordéon">Accordéon</option>
+        <option value="Batterie">Batterie</option>
+        <option value="Baryton">Baryton</option>
+        <option value="ContreBasse">ContreBasse</option>
+        <option value="Cornet">Cornet</option>
+        <option value="Cor d'harmonie">Cor d'harmonie</option>
+
+        <option value="Caisse claire">Caisse claire</option>
+        <option value="Clarinette">Clarinette</option>
+
+        <option value="Euphonium">Euphonium</option>
+        <option value="Flûte-traversière">Flûte-traversière</option>
+        <option value="Gong">Gong</option>
+        <option value="Saxophone-Alto">Saxophone-Alto</option>
+        <option value="Saxophone-Sopra">Saxophone-Sopra</option>
+        <option value="Trompette">Trumpette</option>
+        <option value="Tambour">Tambour</option>
+        <option value="Tuba">Tuba</option>
+        <option value="Violon">Violon</option>
+        <option value="Viola">Viola</option>
+        <option value="Violoncelle">Violoncelle</option>
+        <option value="Autre">Autre</option>
+      </select>
+      <select required class="form-control" id="subject" name="subject">
+        <option value="" disabled selected>Expérience d'année</option>
+        <option value="0-1">0-1 ans</option>
+        <option value="1-2 ans">1-2 ans</option>
+        <option value="2-5 ans">2-5 ans</option>
+        <option value="5-10 ans">5-10 ans</option>
+        <option value="10-15 ans ">10-15 ans</option>
+        <option value=">15 ">>15</option>
+      </select>
+      <label for="subject" name="subject">Sujet</label>
+      <div class="form-floating">
+        <textarea
+          required
+          class="form-control"
+          placeholder="Leave a message here"
+          id="message"
+          style="height: 100px"
+        ></textarea>
+        <label for="message">Votre Message</label>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="whatsappCheckbox"
+          />
+          <label class="form-check-label" for="whatsappCheckbox"
+            >Je souhaite être contacté sur WhatsApp</label
+          >
+        </div>
+      </div>
+      <div class="col-12" id="phoneNumberField" style="display: none">
+        <div class="form-floating">
+          <input
+            type="tel"
+            class="form-control"
+            id="phoneNumber"
+            placeholder="Votre numéro de téléphone"
+          />
+          <label for="phoneNumber">Numéro de téléphone</label>
+        </div>
+      </div>
+      <button id="submitButton" type="submit">Soumettre</button>
+      <p id="messageParagraph"></p>
+    </form>
+    <p id="messageParagraph"></p> -->
+
+    <!-- <div class="containers">
+      <div class="boxs box1s">
+        <div class="icons">
+          <span class="icon">&#128161;</span>
+          <button class="mui-button success">
+            <a href="newsletter.html">The daily mediation</a>
+          </button>
+        </div>
+        <h2>Recevoir une méditation tous les jours</h2>
+        <button
+          style="
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid white;
+            cursor: pointer;
+          "
+        >
+          <a href="newsletter.html#subscribe">JE MABONNE</a>
+        </button>
+      </div>
+      <div class="boxs box2s">
+        <button
+          style="
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: transparent;
+
+            border: 1px solid white;
+            cursor: pointer;
+          "
+        >
+          <a href="contact.html">NOUS ÉCRIRE UN EMAIL</a>
+        </button>
+        <button
+          style="
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: transparent;
+
+            color: #fff;
+            border: 1px solid white;
+            cursor: pointer;
+          "
+        >
+          <a href="prayer.html">DEMANDER LA PRIÈRE</a>
+        </button>
+        <button
+          style="
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid white;
+            cursor: pointer;
+          "
+        >
+          <a href="newsletter.html#subscribe">M’ABONNER À LA NEWSLETTER</a>
+        </button>
+      </div>
+    </div> -->
+    <div class="containers">
+      <div class="boxs box1s">
+        <div class="icons">
+  
+          <span class="icon">&#128161;</span>
+          <button style="background-color: #ffc400;" class="mui-button success"><a style="color: #fff;"  href="newsletter.html">The Monthly Mediation</a></button>
+        </div>
+        <h2 style="color: white;">Recevoir une méditation tous les premiers du mois</h2>
+        <button style=" margin: 5px;  padding: 10px 20px;
+        background-color: transparent; 
+        color: #fff;
+        border: 1px solid white;;
+        cursor: pointer;"><a style="color: white;" href="newsletter.html#subscribe">JE MABONNE</a></button>
+      </div>
+      <div class="boxs box2s">
+  
+        <button style=" margin: 5px;  padding: 10px 20px;
+        background-color: transparent; 
+        color: #fff;
+        border: 1px solid white;;
+        cursor: pointer;"><a style="color: #fff;"  href="form_temoignage.html">PARTAGER MON TÉMOIGNAGE</a></button>
+        
+        <button style="   padding: 10px 20px;margin: 5px;
+        background-color: transparent; 
+       
+        border: 1px solid white;
+        cursor: pointer;"><a  style="color: #fff;" href="contact.html">NOUS ÉCRIRE UN EMAIL</a></button>    <button style=" margin: 5px;  padding: 10px 20px;
+      background-color: transparent; 
+  
+      color: #fff;
+      border: 1px solid white;
+      cursor: pointer;"><a  style="color: #fff;"  href="prayer.html">ENVOYER DES REQUÊTES DE PRIÈRES</a></button>   
+     
+      </div>
+    </div>
+  <!-- Footer Start -->
+  <div
+  class="container-fluid bg-dark text-white-50 footer mt-5 fadeIn"
+  data-wow-delay="0.1s"
+>
+  <div class="container py-5">
+    <div class="row g-5">
+      <div class="col-lg-3 col-md-6">
+
+  <p>  <a  href="index.html" class="navbar-brand ms-4 ms-lg-0">
+    <h6 style="font-size: 20px;" class="fw-bold text-primary m-0">
+      <img alt="logo" src="./img/logo.jfif" width="35" style="border-radius: 100%" />
+      La Grâce<span class="text-white"> Parle</span>
+    </h6>
+  </a></p>
+        <li>
+          L'emplacement du centre se trouve en face de Santé pour tous à
+          Jéricho
+        </li>
+        <div class="d-flex pt-2">
+          <!-- <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a> -->
+          <a
+            class="btn btn-square me-1"
+            href="https://www.facebook.com/Samuel.DALUM"
+            target="_blank"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            class="btn btn-square me-1"
+            href="https://www.tiktok.com/@lagraceparle.officiel?_t=8ekVXKowouT&_r=1"
+            target="_blank"
+            ><i aria-colcount="fab"
+              ><img src="img/tik-tok.png" alt="tiktok" /></i
+          ></a>
+          <a
+            class="btn btn-square me-1"
+            href="https://www.instagram.com/la_grace_parle/?igshid=NTc4MTIwNjQ2YQ%3D%3D"
+            target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-square me-1"
+            href="https://www.youtube.com/@lagraceparle8000/videos"
+            target="_blank"
+            ><i class="fab fa-youtube"></i
+          ></a>
+          <!-- <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a> -->
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="text-light mb-4">Adresse</h5>
+       
+          <i class="fa fa-map-marker-alt me-3">Jéricho, Face santé pour
+            tous</i>
+      <br>
+        <i class="fa fa-phone-alt me-3">+229 97 96 38 96/50505011</i>
+        <br>
+        <i class="fa fa-envelope me-3">contact@lagraceparle.org</i>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h5 class="text-light mb-4">Liens rapides</h5>
+        <a class="btn btn-link" href="about.html"> À propos</a>
+        <a class="btn btn-link" href="contact.html">Contactez-nous</a>
+        <!-- <a class="btn btn-link" href="service.html">Nos services</a> -->
+        <a class="btn btn-link" href="mentions.html">Termes et condition</a>
+        <a class="btn btn-link" href="faq.html">Faq</a>
+      </div>
+
+      <form class="col-lg-3 col-md-6" id="subscribeForm">
+        <div>
+          <h5 class="text-light mb-4">Newsletter</h5>
+          <li>Recevrez nos dernières actualités et mises à jour.</li>
+          <div class="position-relative mx-auto" style="max-width: 800px">
+            <p id="messageParagraph"></p>
+       
+            <a
+              id="openModalButton"
+              href="newsletter.html"
+              class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+            >
+              Je m'abonne
+            </a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="container-fluid copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <a href="index.html">Fondation La Grâce Parle</a>, tous
+          droits réservés.
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+     
+          Designed By <a href="index.html">La Grâce Parle</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="live-icon" style="display: none;">      <a href="https://zeno.fm/radio/la-grace-parle/" target="_blank">  <img src="./img/live2.webp" style="z-index: 10000;  position: fixed;bottom: 10px;left: 10;border-radius: 100%;cursor: pointer;" alt="WhatsApp" width="50" height="50"></a>
+  </div>
+
+
+
+  
+  <!-- <a href="https://api.whatsapp.com/send?phone=+22953037832&text=`Bonjour, j'ai découvert ce lien sur votre site web et je souhaiterais obtenir de plus amples informations concernant la Fondation La Grâce Parle.` " target="_blank">
+    <img src="./img/whatsapp-icon.png" style="z-index: 10000;  position: fixed;bottom: 30px;left: 10;border-radius: 100%;" alt="WhatsApp" width="50" height="50">
+</a> -->
+</div>
+<!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+      // Obtenez les éléments HTML nécessaires
+      var modal = document.getElementById("videoModal");
+      var openTwo = document.getElementById("openTwo");
+      var closeModalBtn = document.getElementById("closeModalBtn");
+      var videoElement = document.getElementById("videoElement"); // Correction ici
+
+      // Lorsque vous cliquez sur le bouton "Ouvrir la vidéo"
+      openTwo.addEventListener("click", function () {
+        // Définissez la source de la vidéo ici
+        videoElement.src = "./video/video-philharmonie-jazz.mp4"; // Correction ici
+        modal.style.display = "block";
+      });
+
+      // Lorsque vous cliquez sur le bouton de fermeture ou en dehors du modal
+      closeModalBtn.addEventListener("click", function () {
+        videoElement.src = ""; // Correction ici
+        modal.style.display = "none";
+      });
+
+      window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          videoElement.src = ""; // Correction ici
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
